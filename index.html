@@ -4,28 +4,36 @@
 <link rel="stylesheet" href="style.css">
 <script src="main.js"></script>
 
+<style>
+  html {
+    overflow-y: hidden;
+  }
+</style>
+
 <head>
   <title>SigmaOne's Main Page</title>
-  <p>Note: Work In Progress</p>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body onload="fadeshow('body')" id="body">
+<body onload="fadeshow('body')" style="overflow-y:scroll;" id="body">
   <div class="header">
     <h1>SigmaOne Enterprises</h1>
   </div>
 
   <div class="nav0">
-    <a onclick="swapview('documents/index/default.html')">ABOUT</a>
-    <a onclick=show("games")>GAMING</a>
+    <a onclick="swapview('documents/index/about.html')">ABOUT</a
+    ><a onclick=show("games")>GAMING</a>
   </div>
 
   <div class="nav1" id="games">
-    <a href=javascript:change("factorio.html")>FACTORIO</a>
-    <!--a href="#">DESTINATION SOL</a-->
+    <a href=javascript:change("factorio.html")>FACTORIO</a
+    ><!--a href="#">DESTINATION SOL</a-->
   </div>
 
-  <iframe class="viewer" id="view" seamless='seamless' src="documents/index/default.html"></object>
-
+  <div style="padding-top:5px; top:-70px; z-index: 1; position:relative; visibility:visible" class="linkheader">
+    <a href="https://github.com/Sigma-One" target="_blank">Github</a
+    ><a href="http://steamcommunity.com/id/sigma_1/" target="_blank">Steam</a>
+  </div>
+  <iframe style="top:-70px; position:relative" class="viewer" id="view" seamless='seamless' src="documents/index/about.html"></iframe>
 </body>

@@ -11,7 +11,7 @@
 }
 
 .nav1 a:hover{
-  background : #ff8800;
+  background : #a00;
 }
 
 </style>
@@ -32,17 +32,18 @@
   </div>
 
   <div class="nav0">
-    <a onclick="change('index.html')">HOME</a>
-    <a onclick="swapview('documents/factorio/default.html')">ABOUT</a>
-    <a onclick="show('mods', true)">MODS</a>
+    <a onclick="change('index.html')">HOME</a
+    ><a onclick="swapview('documents/factorio/about.html')">ABOUT</a
+    ><a onclick="show('mods', true)">MODS</a>
   </div>
 
   <div class="nav1" id="mods">
     <!--<a href="#">&lt;</a>-->
-    <a class="iconbutton" onclick="swapview('documents/factorio/mods/nuclear.html'); show('mods', true)"><img src="images/factorio/mods/nuclear.png"></a>
-    <a class="iconbutton" onclick="swapview('documents/factorio/mods/military.html'); show('mods', true)"><img src="images/factorio/mods/military.png"></a>
+    <a class="iconbutton" onclick="swapview('documents/factorio/mods/nuclear.html'); show('mods', true)"><img src="images/factorio/mods/nuclear.png"></a
+    ><a class="iconbutton" onclick="swapview('documents/factorio/mods/military.html'); show('mods', true)"><img src="images/factorio/mods/military.png"></a
+    >
   </div>
 
-  <iframe class="viewer" id="view" seamless='seamless' src="documents/factorio/default.html"></object>
+  <iframe class="viewer" id="view" seamless='seamless' src="documents/factorio/about.html"></iframe>
 
 </body>
