@@ -1,3 +1,4 @@
+// Show/hide panels by sliding
 function show(element, is_icon=false) {
   var el = document.getElementById(element);
   if (el.style.visibility !== "visible") {
@@ -22,6 +23,7 @@ function show(element, is_icon=false) {
   }
 }
 
+// Show/hide larger elements by fading
 function fadeshow(element) {
   var el = document.getElementById(element);
   if (el.style.visibility !== "visible") {
@@ -35,15 +37,18 @@ function fadeshow(element) {
   }
 }
 
+// Change document
 function change (URL) {
     fadeshow('body')
     setTimeout( function() { window.location = URL }, 500 );
 }
 
+// Change iframe src
 function swapview (path) {
   el = document.getElementById("view")
   if(!el)
     return false;
   el.style.animation = "fadeout 0.5s";
-  setTimeout(function(){ el.setAttribute('src', path); el.style.animation = "fadein 0.5s"; }, 500);
+  setTimeout(function(){ el.style.visibility = "hidden"; }, 500);
+  setTimeout(function(){ el.setAttribute('src', path); el.style.visibility = "visible"; el.style.animation = "fadein 0.5s"; }, 500);
 }

@@ -2,18 +2,18 @@
 
 <link rel="stylesheet" href="style.css">
 
+<!-- Modded style for icon-based navbar-->
 <style>
 .nav1 a{
   background: #999999;
   padding:0px;
-  height: 132px;
+  height: 128px;
   display: block;
 }
 
 .nav1 a:hover{
   background : #a00;
 }
-
 </style>
 
 <script src="main.js"></script>
@@ -26,8 +26,6 @@
 
 <body onload="fadeshow('body')" id="body">
   <div class="header">
-    <span class="homebutton">
-    </span>
     <h1>Factorio Stuff</h1>
   </div>
 
@@ -38,12 +36,9 @@
   </div>
 
   <div class="nav1" id="mods">
-    <!--<a href="#">&lt;</a>-->
     <a class="iconbutton" onclick="swapview('documents/factorio/mods/nuclear.html'); show('mods', true)"><img src="images/factorio/mods/nuclear.png"></a
-    ><a class="iconbutton" onclick="swapview('documents/factorio/mods/military.html'); show('mods', true)"><img src="images/factorio/mods/military.png"></a
-    >
+    ><a class="iconbutton" onclick="swapview('documents/factorio/mods/military.html'); show('mods', true)"><img src="images/factorio/mods/military.png"></a>
   </div>
 
   <iframe class="viewer" id="view" seamless='seamless' src="documents/factorio/about.html"></iframe>
-
 </body>
