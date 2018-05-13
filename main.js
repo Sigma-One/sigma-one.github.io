@@ -48,7 +48,10 @@ function swapview (path) {
   el = document.getElementById("view")
   if(!el)
     return false;
-  el.style.animation = "fadeout 0.5s";
-  setTimeout(function(){ el.style.visibility = "hidden"; }, 500);
-  setTimeout(function(){ el.setAttribute('src', path); el.style.visibility = "visible"; el.style.animation = "fadein 0.5s"; }, 500);
+  el.contentWindow.document.getElementsByTagName("body")[0].style.animation = "fadeout 0.5s";
+  setTimeout(function(){ el.contentWindow.document.getElementsByTagName("body")[0].style.visibility = "hidden"; el.setAttribute('src', path); }, 500);
+  el.addEventListener("load", function() {
+    el.contentWindow.document.getElementsByTagName("body")[0].style.visibility = "visible";
+    el.contentWindow.document.getElementsByTagName("body")[0].style.animation = "fadein 0.5s";
+});
 }
