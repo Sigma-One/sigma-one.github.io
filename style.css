@@ -41,6 +41,7 @@ h3 {
   text-align: center;
   position: relative;
 
+  box-shadow: 0px 0px 0px #101010;
   background: #222222;
   color: #ffffff;
 }
@@ -51,6 +52,7 @@ h3 {
   padding: 0px;
   text-align: center;
   overflow: hidden;
+  box-shadow: 0px 3px 3px 0px #101010;
   position: relative;
 }
 
@@ -62,7 +64,7 @@ h3 {
   text-align: center;
   text-decoration: none;
   font-size: 20px;
-
+  
   transition: background 0.5s;
 
   color: #cccccc
@@ -95,6 +97,7 @@ h3 {
   z-index: 4;
   position: relative;
   text-align: center;
+  box-shadow: 0px 3px 3px #101010;
   background: #222222;
 }
 
@@ -121,6 +124,7 @@ h3 {
 .nav1 {
   overflow: hidden;
 
+  box-shadow: 0px 3px 3px #101010;
   position: relative;
 
   z-index: 2;
