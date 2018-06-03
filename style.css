@@ -57,7 +57,7 @@ h3 {
 }
 
 .linkheader {
-  background: #a00;
+  background: #60a;
   z-index: 1;
   padding: 0px;
   text-align: center;
@@ -81,11 +81,11 @@ h3 {
 }
 
 .linkheader a:hover {
-  background: #700;
+  background: #408;
 }
 
 .lineheader {
-  background: #a00;
+  background: #60a;
   z-index: 1;
   padding: 0px;
   height: 4px;
@@ -121,14 +121,14 @@ h3 {
 
   transition: border-bottom 0.5s, background 0.5s;
 
-  border-bottom: 5px solid #7000;
+  border-bottom: 5px solid #0000;
 
   color: #cccccc
 }
 
 .nav0 a:hover{
   background: #777777;
-  border-bottom: 5px solid #700;
+  border-bottom: 5px solid #50a;
 }
 
 .nav1 {
@@ -153,14 +153,14 @@ h3 {
 
   transition: border-bottom 0.5s, background 0.5s;
 
-  border-bottom: 5px solid #7000;
+  border-bottom: 5px solid #0000;
 
   color: #cccccc
 }
 
 .nav1 a:hover{
   background: #999999;
-  border-bottom: 5px solid #700;
+  border-bottom: 5px solid #50a;
 }
 
 .viewer {
